@@ -468,8 +468,13 @@ a:active
     border-radius: 5px;
     border-radius: 5px;
     outline: none;
-    background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(39,219,179,1) 39%, rgba(42,234,170,1) 70%, rgba(45,253,158,1) 100%);
-    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 0.1em 0.1em 0.2em rgba(34,193,195,1);
+    /*background: rgba(185,230,210,1);*/
+    background: linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+
+    /*background: linear-gradient(to top, rgba(185,230,210,1) 0%, rgba(185,230,210,1) 39%, rgba(185,230,210,1) 70%, rgba(185,230,210,1) 100%);*/
+    /*background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(39,219,179,1) 39%, rgba(42,234,170,1) 70%, rgba(45,253,158,1) 100%);*/
+    /*box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 0.1em 0.1em 0.2em rgba(34,193,195,1);*/
     text-shadow: 0 1px 2px #777;
     /*background:url(img/images/button.png) no-repeat;*/
 }
@@ -676,7 +681,10 @@ p
     margin: 1px;
 
     border-radius: 5px;
-    background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(39,219,179,1) 39%, rgba(42,234,170,1) 70%, rgba(45,253,158,1) 100%);
+
+    background: linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
+
+    /*background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(39,219,179,1) 39%, rgba(42,234,170,1) 70%, rgba(45,253,158,1) 100%);*/
     box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
     text-shadow: 0 1px 2px #777;
 }
@@ -1358,7 +1366,8 @@ section
 
 .tab_container [id^='tab']:checked + label
 {
-    background: linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(31,255,160,1) 100%);
+    background: linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
+    /*background: linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(31,255,160,1) 100%);*/
     /*background: #3c74b1;*/
 }
 
@@ -1452,8 +1461,10 @@ section
     margin: 0 auto;
 
     border-radius: 5px;
-    background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(39,219,179,1) 39%, rgba(42,234,170,1) 70%, rgba(45,253,158,1) 100%);
-    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 0.1em 0.1em 0.2em rgba(34,193,195,1);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    background: linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
+    /*background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(39,219,179,1) 39%, rgba(42,234,170,1) 70%, rgba(45,253,158,1) 100%);*/
+    /*box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 0.1em 0.1em 0.2em rgba(34,193,195,1);*/
 }
 @media all and (max-width: 1100px)
 {
