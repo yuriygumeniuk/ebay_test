@@ -989,8 +989,8 @@ height:74px;
 }
 @media all and (max-width: 900px) {
 #footer{
-width:100%;
-height:74px;
+width:777px;
+height: 74px;
 /*background:url(img/images/footer3.png) no-repeat;*/
 }
 }
