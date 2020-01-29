@@ -177,8 +177,8 @@ justify-content: center;
 }
 
 /*----------------------- Link -----------------------------*/
-#header a:focus, a:active {outline: none; }
-#header a, #header a:visited {text-decoration: none; }
+#header a:focus, a:active {outline: none; color: #fff;}
+#header a, #header a:visited {text-decoration: none; color: #fff;}
 #header a:hover {text-decoration: none; color: #fff; }
 /* ---------------------- Logo -----------------------------*/
 #logo { 
