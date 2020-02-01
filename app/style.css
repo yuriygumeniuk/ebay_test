@@ -806,12 +806,10 @@ a:hover {
 	margin: 0;
 	padding-left: 15px;
 	height: 44px;
-	background: -o-linear-gradient(bottom, #ebebeb, #fefcea);
-	background:    -webkit-gradient(linear, left bottom, left top, from(#ebebeb), to(#fefcea));
-	background:    linear-gradient(to top, #ebebeb, #fefcea);
+	background: #ebebeb;
 
 	color: #585858;
-	line-height: 50px;
+	line-height: 2.8;
 	font-weight: bold;
 	font-size: 16px;
 }
