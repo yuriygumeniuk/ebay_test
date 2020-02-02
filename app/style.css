@@ -996,8 +996,6 @@ input.selector15:checked ~ .img15 {
 	-webkit-box-align: center;
 	align-items: center;
 	-ms-flex-align: center;
-	/*width: 100px;*/
-	/*height: 100px;*/
 }
 
 input.selector1:checked ~ label .img1 img.preview1 ,
@@ -1033,7 +1031,8 @@ input.selector15:checked ~ label .img15 img.preview15 {
 	input.selector13:checked ~ label .img13 img.preview13 ,
 	input.selector14:checked ~ label .img14 img.preview14 ,
 	input.selector15:checked ~ label .img15 img.preview15 {
-		cursor: pointer;
+		cursor: -webkit-zoom-in;
+		cursor: zoom-in;
 	}
 }
 .thumbnail_wrapper {
