@@ -807,9 +807,7 @@ a:hover {
 	font-weight: bold;
 	font-size: 16px;
 }
-.center_titel:hover {
-	cursor: pointer;
-}
+
 .center_content {
 	margin: 0 auto;
 	padding: 10px 30px;
@@ -1449,9 +1447,8 @@ section {
 		opacity: 1;
 	}
 }
-
 @media all and (min-width: 700px) {
-	#big_1:checked ~ #wrapper,
+	#big_1:checked ~ #wrapper ,
 	#big_2:checked ~ #wrapper ,
 	#big_3:checked ~ #wrapper ,
 	#big_4:checked ~ #wrapper ,

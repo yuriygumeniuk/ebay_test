@@ -1,6 +1,3 @@
-html {
-	overflow-y: scroll;
-}
 body {
 	margin: 0;
 	padding: 0;
@@ -11,6 +8,15 @@ body {
 	padding: 5px;
 
 	font-family: Arial;
+}
+
+#wrapper:checked {
+	-webkit-filter: blur(5px);
+	    -ms-filter: blur(5px);
+	        filter: blur(5px);
+
+	   -moz-filter: blur(5px);
+	     -o-filter: blur(5px);
 }
 
 #wrapper img {
@@ -535,9 +541,9 @@ p {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	align-items: left;
 	float: left;
 	-webkit-box-align: center;
-	align-items: left;
 	-ms-flex-align: center;
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 223px;
@@ -800,16 +806,16 @@ a:hover {
 	margin: 0;
 	padding-left: 15px;
 	height: 44px;
-	background: #ebebeb;
+	background: -webkit-gradient(linear, left bottom, left top, from(#ebebeb), to(#fefcea));
+	background: -o-linear-gradient(bottom, #ebebeb, #fefcea);
+	background:    linear-gradient(to top, #ebebeb, #fefcea);
 
 	color: #585858;
-	line-height: 2.8;
+	line-height: 50px;
 	font-weight: bold;
 	font-size: 16px;
 }
-.center_titel:hover {
-	cursor: pointer;
-}
+
 .center_content {
 	margin: 0 auto;
 	padding: 10px 30px;
@@ -965,14 +971,15 @@ input.selector15 {
 }
 input#big_1 ,
 input#big_2 ,
-input#big_3 ,
-input#big_4 ,
-input#big_5 ,
-input#big_6 ,
-input#big_7 ,
-input#big_8 ,
-input#big_9 ,
-input#big_10 {
+input#big_3,
+input#big_4,
+input#big_5,
+input#big_6,
+input#big_7,
+input#big_8,
+input#big_9,
+input#big_10
+{
 	display: none;
 }
 
@@ -998,6 +1005,8 @@ input.selector15:checked ~ .img15 {
 	-webkit-box-align: center;
 	align-items: center;
 	-ms-flex-align: center;
+	/*width: 100px;*/
+	/*height: 100px;*/
 }
 
 input.selector1:checked ~ label .img1 img.preview1 ,
@@ -1032,8 +1041,9 @@ input.selector15:checked ~ label .img15 img.preview15 {
 	input.selector12:checked ~ label .img12 img.preview12 ,
 	input.selector13:checked ~ label .img13 img.preview13 ,
 	input.selector14:checked ~ label .img14 img.preview14 ,
-	input.selector15:checked ~ label .img15 img.preview15 {
-		cursor: zoom-in;
+	input.selector15:checked ~ label .img15 img.preview15 
+	{
+		cursor: pointer;
 	}
 }
 .thumbnail_wrapper {
@@ -1363,63 +1373,73 @@ section {
 }
 /*-------------------------*/
 .img-block__big1 ,
-.img-block__big2 ,
-.img-block__big3 ,
-.img-block__big4 ,
-.img-block__big5 ,
-.img-block__big6 ,
-.img-block__big7 ,
-.img-block__big8 ,
-.img-block__big9 ,
-.img-block__big10 {
+.img-block__big2,
+.img-block__big3,
+.img-block__big4,
+.img-block__big5,
+.img-block__big6,
+.img-block__big7,
+.img-block__big8,
+.img-block__big9,
+.img-block__big10
+ {
+	transition: opacity 400ms linear;
 	visibility: hidden;
 	overflow: hidden;
 	width: 0;
 	height: 0;
+	border-radius: 15px;
 	opacity: 0;
-	transition: opacity 400ms linear;
 }
 @media all and (min-width: 700px) {
 	#big_1:checked ~ label .img-block__big1 ,
-	#big_2:checked ~ label .img-block__big2 ,
-	#big_3:checked ~ label .img-block__big3 ,
-	#big_4:checked ~ label .img-block__big4 ,
-	#big_5:checked ~ label .img-block__big5 ,
-	#big_6:checked ~ label .img-block__big6 ,
-	#big_7:checked ~ label .img-block__big7 ,
-	#big_8:checked ~ label .img-block__big8 ,
-	#big_9:checked ~ label .img-block__big9 ,
-	#big_10:checked ~ label .img-block__big10 {
+	#big_2:checked ~ label .img-block__big2,
+	#big_3:checked ~ label .img-block__big3,
+	#big_4:checked ~ label .img-block__big4,
+	#big_5:checked ~ label .img-block__big5,
+	#big_6:checked ~ label .img-block__big6,
+	#big_7:checked ~ label .img-block__big7,
+	#big_8:checked ~ label .img-block__big8,
+	#big_9:checked ~ label .img-block__big9,
+	#big_10:checked ~ label .img-block__big10
+	{
+		position: absolute;
+	    overflow-y: scroll;
 		position: fixed;
 		top: 50%;
 		left: 50%;
 		z-index: 10;
 		visibility: visible;
-		overflow-y: scroll;
-		max-width: 1000px;
-		max-height: 95%;
+
 		width: 90%;
 		height: auto;
+		max-width: 1000px;
+		max-height: 95%;
+
 		box-shadow: 0px 0px 6px 2px rgba(0,0,0,.4);
 		opacity: 1;
 		cursor: pointer;
 		transform: translate(-50%, -50%);
 	}
-}
+}	
 .img__big {
 	display: block;
+	/*height: 100%;*/
+	/*width: auto;*/
 	width: 100%;
+	/*height: auto;*/
 }
-.modal-background1 ,
-.modal-background2 ,
-.modal-background3 ,
-.modal-background4 ,
-.modal-background5 ,
-.modal-background6 ,
-.modal-background7 ,
-.modal-background8 ,
-.modal-background9 ,
-.modal-background10 {
+.modal-background1,
+.modal-background2,
+.modal-background3,
+.modal-background4,
+.modal-background5,
+.modal-background6,
+.modal-background7,
+.modal-background8,
+.modal-background9,
+.modal-background10
+{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1432,16 +1452,17 @@ section {
 	transition: opacity 400ms linear;
 }
 @media all and (min-width: 700px) {
-	#big_1:checked ~ .modal-background1 ,
-	#big_2:checked ~ .modal-background2 ,
-	#big_3:checked ~ .modal-background3 ,
-	#big_4:checked ~ .modal-background4 ,
-	#big_5:checked ~ .modal-background5 ,
-	#big_6:checked ~ .modal-background6 ,
-	#big_7:checked ~ .modal-background7 ,
-	#big_8:checked ~ .modal-background8 ,
-	#big_9:checked ~ .modal-background9 ,
-	#big_10:checked ~ .modal-background10 {
+	#big_1:checked ~ .modal-background1,
+	#big_2:checked ~ .modal-background2,
+	#big_3:checked ~ .modal-background3,
+	#big_4:checked ~ .modal-background4,
+	#big_5:checked ~ .modal-background5,
+	#big_6:checked ~ .modal-background6,
+	#big_7:checked ~ .modal-background7,
+	#big_8:checked ~ .modal-background8,
+	#big_9:checked ~ .modal-background9,
+	#big_10:checked ~ .modal-background10
+	{
 		visibility: visible;
 		width: 100%;
 		height: 100%;
@@ -1449,18 +1470,18 @@ section {
 		opacity: 1;
 	}
 }
-
 @media all and (min-width: 700px) {
 	#big_1:checked ~ #wrapper,
-	#big_2:checked ~ #wrapper ,
-	#big_3:checked ~ #wrapper ,
-	#big_4:checked ~ #wrapper ,
-	#big_5:checked ~ #wrapper ,
-	#big_6:checked ~ #wrapper ,
-	#big_7:checked ~ #wrapper ,
-	#big_8:checked ~ #wrapper ,
-	#big_9:checked ~ #wrapper ,
-	#big_10:checked ~ #wrapper {
+	#big_2:checked ~ #wrapper,
+	#big_3:checked ~ #wrapper,
+	#big_4:checked ~ #wrapper,
+	#big_5:checked ~ #wrapper,
+	#big_6:checked ~ #wrapper,
+	#big_7:checked ~ #wrapper,
+	#big_8:checked ~ #wrapper,
+	#big_9:checked ~ #wrapper,
+	#big_10:checked ~ #wrapper
+	 {
 		-webkit-filter: blur(2px);
 		    -ms-filter: blur(2px);
 		        filter: blur(2px);
