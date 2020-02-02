@@ -1376,7 +1376,6 @@ section {
 	overflow: hidden;
 	width: 0;
 	height: 0;
-	border-radius: 15px;
 	opacity: 0;
 	-webkit-transition: opacity 400ms linear;
 	-o-transition: opacity 400ms linear;
