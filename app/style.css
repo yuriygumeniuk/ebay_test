@@ -1,3 +1,6 @@
+html {
+	overflow-y: scroll;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -8,15 +11,6 @@ body {
 	padding: 5px;
 
 	font-family: Arial;
-}
-
-#wrapper:checked {
-	-webkit-filter: blur(5px);
-	    -ms-filter: blur(5px);
-	        filter: blur(5px);
-
-	   -moz-filter: blur(5px);
-	     -o-filter: blur(5px);
 }
 
 #wrapper img {
@@ -1399,7 +1393,6 @@ section {
 	#big_8:checked ~ label .img-block__big8 ,
 	#big_9:checked ~ label .img-block__big9 ,
 	#big_10:checked ~ label .img-block__big10 {
-		position: absolute;
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -1421,10 +1414,7 @@ section {
 }
 .img__big {
 	display: block;
-	/*height: 100%;*/
-	/*width: auto;*/
 	width: 100%;
-	/*height: auto;*/
 }
 .modal-background1 ,
 .modal-background2 ,
