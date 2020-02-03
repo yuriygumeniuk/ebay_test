@@ -1,6 +1,3 @@
-html {
-	overflow-y: scroll;
-}
 body {
 	margin: 0;
 	padding: 0;
@@ -1380,7 +1377,7 @@ section {
 	-o-transition: opacity 400ms linear;
 	transition: opacity 400ms linear;
 }
-@media all and (min-width: 700px) {
+@media all and (orientation: landscape) and (min-width: 700px) {
 	#big_1:checked ~ label .img-block__big1 ,
 	#big_2:checked ~ label .img-block__big2 ,
 	#big_3:checked ~ label .img-block__big3 ,
@@ -1396,10 +1393,40 @@ section {
 		left: 50%;
 		z-index: 10;
 		visibility: visible;
-		overflow-y: scroll;
-		max-width: 1000px;
-		max-height: 95%;
-		width: 90%;
+		/*overflow-y: scroll;*/
+		width: auto;
+		height: 100%;
+		-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,.4);
+		box-shadow: 0px 0px 6px 2px rgba(0,0,0,.4);
+		opacity: 1;
+		cursor: pointer;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.img__big {
+		width: auto;
+		height: 100%;
+	}
+}
+@media all and (orientation: portrait) and (min-width: 700px) {
+	#big_1:checked ~ label .img-block__big1 ,
+	#big_2:checked ~ label .img-block__big2 ,
+	#big_3:checked ~ label .img-block__big3 ,
+	#big_4:checked ~ label .img-block__big4 ,
+	#big_5:checked ~ label .img-block__big5 ,
+	#big_6:checked ~ label .img-block__big6 ,
+	#big_7:checked ~ label .img-block__big7 ,
+	#big_8:checked ~ label .img-block__big8 ,
+	#big_9:checked ~ label .img-block__big9 ,
+	#big_10:checked ~ label .img-block__big10 {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		z-index: 10;
+		visibility: visible;
+		/*overflow-y: scroll;*/
+		width: 100%;
 		height: auto;
 		-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,.4);
 		box-shadow: 0px 0px 6px 2px rgba(0,0,0,.4);
@@ -1409,10 +1436,10 @@ section {
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 	}
-}
-.img__big {
-	display: block;
-	width: 100%;
+	.img__big {
+		width: 100%;
+		height: auto;
+	}
 }
 .modal-background1 ,
 .modal-background2 ,
