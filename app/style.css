@@ -547,25 +547,25 @@ p {
 }
 .left__item {
 	width: 200px;
-	overflow: hidden;
 	border-radius: 5px;
 	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.4);
 	box-shadow: 0 2px 4px rgba(0,0,0,.4);
 	margin-bottom: 16px;	
 }
 .left_button {
+	border-radius: 5px 5px 0 0;
+	-webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,.1);
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,.1);
 	height: 40px;
-	background:    -webkit-gradient(linear, left bottom, left top, from(rgba(95,173,126,1)), to(rgba(185,230,210,1)));
-	background:    -o-linear-gradient(bottom, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
-	background:    linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(95,173,126,1)), to(rgba(185,230,210,1)));
+	background: -o-linear-gradient(bottom, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
+	background: linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
 	text-shadow: 0 1px 2px #777;
-	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.4);
-	box-shadow: 0 2px 4px rgba(0,0,0,.4);
 }
 
 .left_titel {
 	margin: 0;
-	padding-left: 11px;
+	padding-left: 8px;
 	text-indent: 5px;
 
 	color: #fff;
@@ -575,8 +575,10 @@ p {
 }
 
 .left_content {
-	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.3);
-	box-shadow: 0 2px 3px rgba(0,0,0,.3);
+	margin-top: -2px;
+	border-radius: 0 0 5px 5px;
+	border: 1px solid rgba(0,0,0,.1);
+	border-top: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display:         flex;
