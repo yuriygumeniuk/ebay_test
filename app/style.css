@@ -529,6 +529,7 @@ p {
 /* ---------------------- Left -----------------------------*/
 
 .left {
+	padding: 3px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -538,25 +539,28 @@ p {
 	-ms-flex-align: center;
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 223px;
-	    flex: 0 0 223px;
+	    flex: 1 1 223px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	    flex-direction: column;
 }
-
-.left_button {
-	margin: 1px;
-	width: 207px;
-	height: 42px;
+.left__item {
+	width: 200px;
+	overflow: hidden;
 	border-radius: 5px;
-	background: -o-linear-gradient(bottom, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.4);
+	box-shadow: 0 2px 4px rgba(0,0,0,.4);
+	margin-bottom: 16px;	
+}
+.left_button {
+	height: 40px;
 	background:    -webkit-gradient(linear, left bottom, left top, from(rgba(95,173,126,1)), to(rgba(185,230,210,1)));
+	background:    -o-linear-gradient(bottom, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
 	background:    linear-gradient(0deg, rgba(95,173,126,1) 0%, rgba(185,230,210,1) 100%);
-	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.2);
-	        box-shadow: 2px 2px 3px rgba(0,0,0,.2);
-
 	text-shadow: 0 1px 2px #777;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.4);
+	box-shadow: 0 2px 4px rgba(0,0,0,.4);
 }
 
 .left_titel {
@@ -571,6 +575,8 @@ p {
 }
 
 .left_content {
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.3);
+	box-shadow: 0 2px 3px rgba(0,0,0,.3);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display:         flex;
@@ -581,15 +587,8 @@ p {
 	    flex-direction: row;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	margin: -2px 5px 16px;
 	padding: 3px;
-	width: 190px;
-	border: 1px solid #d8d8d8;
-	border-top: 0;
-	border-radius: 0 0 6px 6px;
 	background: #fafafa;
-	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.3);
-	        box-shadow: 0 2px 3px rgba(0,0,0,.3);
 
 	color: black;
 	line-height: 19px;
@@ -725,7 +724,7 @@ a:hover {
 /* ---------------------- Center -----------------------------*/
 
 .center {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 @media all and (max-width: 1100px) {
 	.center {
@@ -778,7 +777,7 @@ a:hover {
 	}
 }
 .center_box {
-	border-radius: 4px;
+	border-radius: 5px;
 	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.3);
 	        box-shadow: 0 2px 4px rgba(0,0,0,.3);
 }
@@ -794,6 +793,7 @@ a:hover {
 }
 
 .center_titel {
+	border-radius: 5px 5px 0 0;
 	margin: 0;
 	padding-left: 15px;
 	height: 44px;
@@ -1109,10 +1109,14 @@ input.selector15:checked ~ label .img15 img.preview15 {
 }
 
 .tab_container {
+	overflow: hidden;
+	border-radius: 5px;
 	position: relative;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	width: 100%;
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.2);
+	box-shadow: 0 2px 3px rgba(0,0,0,.2);
 }
 
 .tab_container img {
@@ -1163,6 +1167,7 @@ section {
 	display: block;
 	padding: 15px 25px 15px;
 	border: 1px solid #d1d1d1;
+	border-radius: 0 0 5px 5px;
 	border-top: none;
 	background: #fff;
 	-webkit-box-shadow: 0 0 5px #b9b9b9;
@@ -1393,7 +1398,6 @@ section {
 		left: 50%;
 		z-index: 10;
 		visibility: visible;
-		/*overflow-y: scroll;*/
 		width: auto;
 		height: 100%;
 		-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,.4);
@@ -1425,7 +1429,6 @@ section {
 		left: 50%;
 		z-index: 10;
 		visibility: visible;
-		/*overflow-y: scroll;*/
 		width: 100%;
 		height: auto;
 		-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,.4);
