@@ -22,7 +22,7 @@ gulp.task('server', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('./app/#source/*.css', {readDelay: 500}, function(){gulp.start('styles');});
-	gulp.watch(['./app/*.html', './app/*.js', './app/img/**/*.*']).on('change', browserSync.reload);
+	gulp.watch(['./app/*.html', './app/style1.css', './app/*.js', './app/img/**/*.*']).on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {

@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>SPECTRUM</title>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style1.css">
-</head>
-<body>
+	<link rel="stylesheet" type="text/css" href="https://spectrumdentalstore.github.io/template/style1.css">
+
+
 	<!-- 1 -->
 	<input type="checkbox" id="big_1" >
 		<label for="big_1" class="popup__img">	
@@ -366,29 +361,15 @@
 					<div class="center_titel">Item Description</div>
 					<div class="center_content">
 						<ul>
-							<li class="desc-list"><span>CAD/CAM Ti-base</span></li>
-							<li class="desc-list"><span>Material: Titanium grade 23 (TI-6AL-4V ELI - ASTM F136)</span></li>
-							<li class="desc-list"><span>Diameter: 4.5mm</span></li>
-							<li class="desc-list"><span>Gingival height: 1mm, 2,mm, 3mm</span></li>
-							<li class="desc-list"><span>Post height: 3.5mm, 4.5mm</span></li>
-							<li class="desc-list"><span>Compatible with: Straumann® RC, Dental Ratio®, Bioconcept® etc</span></li>
-							<li class="desc-list"><span>Titanium fixation screw included!</span></li>
-							<li class="desc-list"><span>CAD/CAM Ti-base</span></li>
-							<li class="desc-list"><span>Material: Titanium grade 23 (TI-6AL-4V ELI - ASTM F136)</span></li>
-							<li class="desc-list"><span>Diameter: 4.5mm</span></li>
-							<li class="desc-list"><span>Gingival height: 1mm, 2,mm, 3mm</span></li>
-							<li class="desc-list"><span>Post height: 3.5mm, 4.5mm</span></li>
-							<li class="desc-list"><span>Compatible with: Straumann® RC, Dental Ratio®, Bioconcept® etc</span></li>
-							<li class="desc-list"><span>Titanium fixation screw included!</span></li>
-							<li class="desc-list"><span>CAD/CAM Ti-base</span></li>
-							<li class="desc-list"><span>Material: Titanium grade 23 (TI-6AL-4V ELI - ASTM F136)</span></li>
-							<li class="desc-list"><span>Diameter: 4.5mm</span></li>
-							<li class="desc-list"><span>Gingival height: 1mm, 2,mm, 3mm</span></li>
-							<li class="desc-list"><span>Post height: 3.5mm, 4.5mm</span></li>
-							<li class="desc-list"><span>Compatible with: Straumann® RC, Dental Ratio®, Bioconcept® etc</span></li>
-							<li class="desc-list"><span>Titanium fixation screw included!</span></li>
+							<li class="tab-list"><span>CAD/CAM Ti-base</span></li>
+							<li class="tab-list"><span>Material: Titanium grade 23 (TI-6AL-4V ELI - ASTM F136)</span></li>
+							<li class="tab-list"><span>Diameter: 4.5mm</span></li>
+							<li class="tab-list"><span>Gingival height: 1mm, 2,mm, 3mm</span></li>
+							<li class="tab-list"><span>Post height: 3.5mm, 4.5mm</span></li>
+							<li class="tab-list"><span>Compatible with: Straumann® RC, Dental Ratio®, Bioconcept® etc</span></li>
+							<li class="tab-list"><span>Titanium fixation screw included!</span></li>
 						</ul>
-						<p><span>Important note! </span>Please select size you want in the catalog page below and indicate Art.-No. in the note on the checkout page!  If you will not add it, we will send you a random size! </p>
+						<p><span>Important note!</span> Please select size you want in the catalog page below and indicate Art.-No. in the note on the checkout page!  If you will not add it, we will send you a random size!</p>
 					</div>
 				</div>
 				
@@ -449,11 +430,6 @@
 				<a href="https://contact.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&requested=Add your Ebay Username here" target="_blank">Contact Us</a>
 			</div>
 		</div>
-		<div id="copyright">&copy; 2020 SPECTRUM. All Rights Reserved/ Design by Rojas</a></div>
+		<div id="copyright">&copy; 2020 SPECTRUM. All Rights Reserved/ Design by Rojas</div>
 	</div>
 </div>
-<!-- [ TagBot assisted ] -->
-
-
-</body>
-</html>
