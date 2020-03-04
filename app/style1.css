@@ -6,7 +6,7 @@ body {
 #wrapper {
 	margin: 0 auto;
 	padding: 5px;
-
+	height: 100%;
 	font-family: Arial;
 }
 
@@ -1142,8 +1142,8 @@ input.selector15:checked ~ label .img15 img.preview15 {
 }
 
 .tab_container {
-	border: 1px solid red !important;
-	/*overflow: hidden;*/
+	/*border: 1px solid red !important;*/
+	overflow: hidden;
 	border-radius: 5px;
 	position: relative;
 	margin: 0 auto;
