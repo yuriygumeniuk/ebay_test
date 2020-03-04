@@ -1142,7 +1142,8 @@ input.selector15:checked ~ label .img15 img.preview15 {
 }
 
 .tab_container {
-	overflow: hidden;
+	border: 1px solid red !important;
+	/*overflow: hidden;*/
 	border-radius: 5px;
 	position: relative;
 	margin: 0 auto;
